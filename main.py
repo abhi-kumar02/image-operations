@@ -2,7 +2,7 @@ import torch
 from diffusers import DiffusionPipeline
 
 
-def generate_image_from_prompt(prompt: str, output_path: str = "generated_image.png", device: torch.device = None):
+def generate_image_from_prompt(prompt: str, output_path: str = "images/generated_image.png", device: torch.device = None):
     """
     Generates an image from a given text prompt using Stable Diffusion and saves it to the specified path.
 
@@ -47,7 +47,7 @@ if __name__ == "__main__":
 
     # Define prompt and output file path
     prompt_text = "twins playing football"
-    output_file = "twins_playing_football.png"
+    output_file = "images/twins_playing_football.png"
 
     # Generate and save the image
     generate_image_from_prompt(prompt_text, output_file, device)

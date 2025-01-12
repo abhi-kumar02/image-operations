@@ -31,5 +31,5 @@ def process_image(input_image_path, output_image_path):
     print(f"Modified image saved to {output_image_path}")
 
 # Example usage
-process_image("twins_playing_football.png", "modified_image.jpg")
+process_image("images/twins_playing_football.png", "images/modified_image.jpg")
 
